@@ -15,6 +15,7 @@
 //= require_tree .
 
 function renderArtile( art ) {
+  let $input = $('input').val();
   let $div = $('div');
   // var $album = $('<li class="album">');
   let $p = $('<p>')

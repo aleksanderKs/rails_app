@@ -7,3 +7,20 @@
 
 <input type="text" name="text">
 <input type="button" name="" value="submit">
+
+
+<!-- <form accept-charset="UTF-8" action="/articles" method="get">
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <label for="q">Search for:</label>
+  <input id="q" name="q" type="text" />
+  <input name="commit" type="submit" value="Search" />
+</form>
+ -->
+
+<%= form_tag("/articles", method:"get") do %>
+ <%= label_tag(:article, "Articles:") %>
+ <%= text_field_tag(:q) %>
+
+
+ <%= button_tag "Search", :class =>"search_lyrics"%>
+<% end %>
